@@ -1,0 +1,19 @@
+@mixin add-background($color){
+	background:$color;
+	@if $color == $primary-color{
+		color:$white;
+	} @elseif $color == $white{
+		color:$primary-color;
+	}
+}
+
+
+
+.skill .fa{
+    width: $fa-width;
+    height: $fa-height;
+    padding: $fa-padding;
+    border: $fa-border;
+    border-radius: $fa-circle;
+    @include add-background($white)
+}

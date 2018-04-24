@@ -1,0 +1,15 @@
+/*full-screen landing*/
+header {
+  background-image: url(../imgs/startup.jpg);
+  background-color: powderblue;
+  background-size: 100% 100%;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  height: calc(100%);
+  color: #3a52b7; }
+
+header {
+  border-bottom: 1px solid #3a52b7; }
+
+header h1 {
+  font-size: 4rem; }

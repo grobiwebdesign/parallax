@@ -1,0 +1,20 @@
+/*Base - Base styles, variables, mixins, etc*/
+
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+@import 'base/_reset.scss';
+@import 'base/_base.scss';
+
+/*Layout - Layout styles*/
+
+@import 'layout/_header.scss';
+@import 'layout/_main.scss';
+@import 'layout/_nav.scss';
+@import 'layout/_footer.scss';
+
+/*Modules - Module styles, buttons, sections, typography, etc*/
+
+@import 'modules/_buttons.scss';
+@import 'modules/_components.scss';
+@import 'modules/_typography.scss';
+@import 'modules/_forms.scss';

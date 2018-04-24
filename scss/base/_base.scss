@@ -1,0 +1,11 @@
+#about{
+    height:100%;
+}
+
+.container-fluid{
+    @include add-background($primary-color);
+}
+
+.row{
+    padding: $gap;
+}
