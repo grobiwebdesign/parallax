@@ -1,4 +1,16 @@
+#services{
+    height:100%;
+    background-color: aquamarine;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
 
 @media only screen and (max-width: 480px){
-
-} 
+#header h1{
+    line-height: 30%;
+}
+}

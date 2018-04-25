@@ -1,30 +1,45 @@
 /*Base - Base styles, variables, mixins, etc*/
-.skill .fa {
-  width: 70px;
-  height: 70px;
-  padding: 18px;
-  border: 1px solid #3a52b7;
-  border-radius: 50px;
-  background: #fff;
-  color: #3a52b7; }
-
+/*$fa-width:70px;
+$fa-height:70px;
+$fa-padding:18px;
+$fa-border:1px solid $primary-color;
+$fa-circle:50px;*/
+/*.skill .fa{
+    width: $fa-width;
+    height: $fa-height;
+    padding: $fa-padding;
+    border: $fa-border;
+    border-radius: $fa-circle;
+    @include add-background($white)
+}*/
 html, body {
-  width: 100%;
   height: 100%; }
 
-#about {
-  height: 100%; }
-
+/*#header{
+	background-color: #ff9000;
+	}
+	
+	#about{
+	background-color: aliceblue;
+	}
+	
+	#services{
+	background-color: antiquewhite;
+	}
+	
+	#third{
+	background-color: aqua;
+	}
+	
+	#forth{
+	background-color: aquamarine;
+	}*/
 .container-fluid {
   background: #3a52b7;
   color: #fff; }
 
-.row {
-  padding: 2.5rem 0; }
-
 /*Layout - Layout styles*/
-/*full-screen landing*/
-.hero {
+#header {
   background: url(../imgs/startup.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -33,7 +48,7 @@ html, body {
   height: 100%;
   overflow: hidden;
   color: #3a52b7; }
-  .hero:before {
+  #header:before {
     content: '';
     position: absolute;
     top: 0;
@@ -45,6 +60,18 @@ html, body {
     background-image: -o-linear-gradient(top left, #fff, #fff);
     background-image: linear-gradient(to bottom right, #fff, #fff);
     opacity: .5; }
+
+#services {
+  height: 100%;
+  background-color: aquamarine;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+@media only screen and (max-width: 480px) {
+  #header h1 {
+    line-height: 30%; } }
 
 .navbar {
   background-color: #fff; }
@@ -77,7 +104,6 @@ html, body {
   -moz-transition: all 0.25s ease-in;
   -o-transition: all 0.25s ease-in;
   transition: all 0.25s ease-in;
-  /** START THE FINAL STATE STYLING **/
   background-position: bottom left;
   color: rgba(0, 0, 255, 0.2); }
 
@@ -93,9 +119,9 @@ html, body {
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(58, 82, 183, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
 
-footer {
-  background-color: rgba(0, 0, 255, 0.2); }
-
+/*footer{
+    background-color:rgba(0, 0, 255, .2);
+}*/
 /*Modules - Module styles, buttons, sections, typography, etc*/
 #backtotop {
   position: fixed;
@@ -116,33 +142,40 @@ footer {
   transition: 0.5s;
   cursor: pointer; }
 
-.social-media {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+/*
+.social-media{
+	display: flex;
 
-.social-media li {
-  list-style: none; }
+}
 
-.social-media li a {
-  width: 60px;
-  height: 60px;
-  margin: 0 3px;
-  display: block;
-  text-align: center;
-  padding: 6px;
-  text-decoration: none; }
+.social-media li{
+	list-style: none;
+}
 
-.social-media a {
-  display: block;
-  color: #fff;
-  font-size: 2rem;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s; }
+.social-media li a{
+	width: 60px;
+	height: 60px;
+	margin: 0 3px;
+	display: block;
+	text-align: center;
+	padding: 6px;
+	text-decoration: none;
+	
+}
 
-.social-media a :hover {
-  color: #3a52b7;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s; }
+.social-media a{
+	display: block;
+	color:$white;
+	font-size: 2rem;
+	transition: 0.5s; 
+}
+
+.social-media a :hover{
+	color:$primary-color;
+	transition: 0.5s;
+}*/
+.row {
+  padding: 2.5rem 0; }
+
+#header h1 {
+  line-height: 350%; }
